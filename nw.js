@@ -10,14 +10,18 @@ const svc = new Service({
 	grow: '0.25', // 重启等待时间成长值，第一次1秒，第二次1.25秒。。。
 	maxRestarts: '40', // 60秒内最大重启次数
 	env: [
-		// {
-		// 	name: 'ENABLE_FLAC',
-		// 	value 'true',
-		// },
-		// {
-		// 	name: 'QQ_COOKIE',
-		// 	value: 'uin=<your_uin>; qm_keyst=<your_qm_keyst>',
-		// },
+		 {
+		 	name: 'ENABLE_FLAC',
+		 	value 'true',
+		 },
+		 {
+		 	name: 'QQ_COOKIE',
+		 	value: 'uin=2073377971; qm_keyst=Q_H_L_5FWz5Sx0rVLNe7F6wCiayq-gVqXVfYxH9QnmxvVYTItrWYVEA_coUzA',
+		 },
+		 {
+			name: 'ENABLE_LOCAL_VIP',
+			value: 'svip'
+		 },
 	],
 });
 
